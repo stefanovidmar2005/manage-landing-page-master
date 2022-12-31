@@ -171,23 +171,49 @@ h6 {
   margin-bottom: 6rem;
   line-height: 1.7;
 }
+.manage__cards p {
+  text-align: left;
+  padding: 0 2rem;
+  color: #9095a7;
+  font-size: 1.63rem;
+  margin-bottom: 4rem;
+}
 .manage__card {
   background-color: #ffefeb;
+  padding: 1rem;
   margin-bottom: 2rem;
+  position: relative;
+  margin-left: 1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
 .manage__card-flex {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 3rem;
 }
 .manage__card-flex h3 {
   color: hsl(228deg, 39%, 23%);
   font-size: 1.6rem;
+  margin-left: 6rem;
 }
-.manage__card-flex span {
+.manage__card-flex .cont {
   background-color: #f25f3a;
-  border-radius: 1rem;
+  border-radius: 2rem;
   color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 21%;
+  font-size: 1.6rem;
+}
+.manage__card-flex .cont span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -15,24 +15,50 @@
       line-height: 1.7;
     }
   }
+  &__cards {
+    p {
+      text-align: left;
+      padding: 0 2rem;
+      color: $secondary-color-grey-blue;
+      font-size: 1.63rem;
+      margin-bottom: 4rem;
+    }
+  }
   &__card {
     background-color: $secondary-color-pale-red;
-    // padding: 1rem;
+    padding: 1rem;
     margin-bottom: 2rem;
+    position: relative;
+    margin-left: 1rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
   }
   &__card-flex {
     display: flex;
     justify-content: center;
-    // align-items: center;
+    align-items: center;
     gap: 3rem;
     h3 {
       color: $primary-color-dark-blue;
       font-size: 1.6rem;
+      margin-left: 6rem;
     }
-    span {
+    .cont {
       background-color: $primary-color-bright-red;
-      border-radius: 1rem;
+      border-radius: 2rem;
       color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 21%;
+      font-size: 1.6rem;
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
   }
 }
