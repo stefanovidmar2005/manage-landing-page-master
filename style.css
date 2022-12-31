@@ -389,8 +389,9 @@ h6 {
 .footer .contact__links-icons a:hover {
   color: #f25f3a;
 }
-.footer a {
+.footer .special {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .footer p {
