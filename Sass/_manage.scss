@@ -1,0 +1,38 @@
+.manage {
+  margin-top: 8rem;
+  text-align: center;
+  &__heading {
+    padding: 0 3.2rem;
+    h2 {
+      color: $primary-color-dark-blue;
+      font-size: 3rem;
+      margin-bottom: 1.2rem;
+    }
+    p {
+      color: $secondary-color-grey-blue;
+      font-size: 1.5rem;
+      margin-bottom: 6rem;
+      line-height: 1.7;
+    }
+  }
+  &__card {
+    background-color: $secondary-color-pale-red;
+    // padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  &__card-flex {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    gap: 3rem;
+    h3 {
+      color: $primary-color-dark-blue;
+      font-size: 1.6rem;
+    }
+    span {
+      background-color: $primary-color-bright-red;
+      border-radius: 1rem;
+      color: #fff;
+    }
+  }
+}

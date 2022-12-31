@@ -119,18 +119,6 @@ h6 {
   background-size: cover;
   height: 35rem;
 }
-.header__images-2 {
-  background-image: url("images/bg-tablet-pattern.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100%;
-  z-index: -1;
-  position: absolute;
-  top: -15rem;
-  left: 10rem;
-  width: 100%;
-}
 .header__content {
   text-align: center;
 }
@@ -156,6 +144,50 @@ h6 {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   cursor: pointer;
   font-size: 1.5rem;
+  transition: all 0.25s ease-in-out;
+  border: 2px solid transparent;
+}
+.header__content button:hover {
+  border: 2px solid #f25f3a;
+  background-color: #fff;
+  color: hsl(228deg, 39%, 23%);
+}
+
+.manage {
+  margin-top: 8rem;
+  text-align: center;
+}
+.manage__heading {
+  padding: 0 3.2rem;
+}
+.manage__heading h2 {
+  color: hsl(228deg, 39%, 23%);
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+.manage__heading p {
+  color: #9095a7;
+  font-size: 1.5rem;
+  margin-bottom: 6rem;
+  line-height: 1.7;
+}
+.manage__card {
+  background-color: #ffefeb;
+  margin-bottom: 2rem;
+}
+.manage__card-flex {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.manage__card-flex h3 {
+  color: hsl(228deg, 39%, 23%);
+  font-size: 1.6rem;
+}
+.manage__card-flex span {
+  background-color: #f25f3a;
+  border-radius: 1rem;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
