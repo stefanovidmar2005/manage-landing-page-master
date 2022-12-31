@@ -1,0 +1,39 @@
+@import "variables";
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+  .navigation__list {
+    display: none;
+  }
+  .navigation__button {
+    display: none;
+  }
+
+  .navigation__burger {
+    height: 3px;
+    width: 2.5rem;
+    background-color: $primary-color-dark-blue;
+    cursor: pointer;
+    position: relative;
+    &::before {
+      content: "";
+      height: 3px;
+      width: 2.5rem;
+      background-color: $primary-color-dark-blue;
+      position: absolute;
+      top: -0.8rem;
+    }
+    &::after {
+      content: "";
+      height: 3px;
+      width: 2.5rem;
+      background-color: $primary-color-dark-blue;
+      position: absolute;
+      top: 0.8rem;
+    }
+  }
+}

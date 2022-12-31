@@ -1,0 +1,161 @@
+:root {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+}
+.navigation .navigation__list {
+  display: none;
+}
+.navigation .navigation__button {
+  display: none;
+}
+.navigation .navigation__burger {
+  height: 3px;
+  width: 2.5rem;
+  background-color: hsl(228deg, 39%, 23%);
+  cursor: pointer;
+  position: relative;
+}
+.navigation .navigation__burger::before {
+  content: "";
+  height: 3px;
+  width: 2.5rem;
+  background-color: hsl(228deg, 39%, 23%);
+  position: absolute;
+  top: -0.8rem;
+}
+.navigation .navigation__burger::after {
+  content: "";
+  height: 3px;
+  width: 2.5rem;
+  background-color: hsl(228deg, 39%, 23%);
+  position: absolute;
+  top: 0.8rem;
+}
+
+.header {
+  padding: 0 2.5rem;
+}
+.header__images {
+  position: relative;
+}
+.header__images-1 {
+  background-image: url("images/illustration-intro.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 35rem;
+}
+.header__images-2 {
+  background-image: url("images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: -15rem;
+  left: 10rem;
+  width: 100%;
+}
+.header__content {
+  text-align: center;
+}
+.header__content h1 {
+  color: hsl(228deg, 39%, 23%);
+  font-size: 3.5rem;
+  line-height: 1.4;
+  margin-bottom: 1.2rem;
+}
+.header__content p {
+  color: #9095a7;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+.header__content button {
+  background-color: #f25f3a;
+  border: 0;
+  border-radius: 2rem;
+  padding: 1.25rem 3.4rem;
+  color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
