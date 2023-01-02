@@ -355,6 +355,11 @@ h6 {
 .testimonials {
   padding: 0 2rem;
 }
+@media (min-width: 1000px) {
+  .testimonials {
+    padding: 0 9rem;
+  }
+}
 .testimonials h2 {
   text-align: center;
   color: hsl(228deg, 39%, 23%);
@@ -363,12 +368,26 @@ h6 {
   margin-bottom: 8rem;
   font-weight: 700;
 }
+@media (min-width: 1000px) {
+  .testimonials h2 {
+    font-size: 4rem;
+  }
+}
 .testimonials__cards {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 7rem;
+}
+@media (min-width: 1000px) {
+  .testimonials__cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 3.5rem;
+    margin-bottom: 2rem;
+  }
 }
 .testimonials__card {
   background-color: #fafafa;
@@ -397,6 +416,11 @@ h6 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media (min-width: 1000px) {
+  .testimonials .center {
+    margin-bottom: 2rem;
+  }
 }
 .testimonials button {
   background-color: #f25f3a;
