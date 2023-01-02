@@ -8,7 +8,7 @@
   margin-bottom: 4rem;
   @include for-desktop() {
     margin-bottom: 5rem;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 5rem;
   }
   .navigation__list {
