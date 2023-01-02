@@ -247,13 +247,32 @@ h6 {
   margin-top: 8rem;
   text-align: center;
 }
+@media (min-width: 1000px) {
+  .manage {
+    padding: 0 9rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 15rem;
+  }
+}
 .manage__heading {
   padding: 0 3.2rem;
+}
+@media (min-width: 1000px) {
+  .manage__heading {
+    text-align: left;
+  }
 }
 .manage__heading h2 {
   color: hsl(228deg, 39%, 23%);
   font-size: 3rem;
   margin-bottom: 1.2rem;
+}
+@media (min-width: 1000px) {
+  .manage__heading h2 {
+    font-size: 3rem;
+  }
 }
 .manage__heading p {
   color: #9095a7;
@@ -261,12 +280,23 @@ h6 {
   margin-bottom: 6rem;
   line-height: 1.7;
 }
+@media (min-width: 1000px) {
+  .manage__heading p {
+    font-size: 1.5rem;
+  }
+}
 .manage__cards p {
   text-align: left;
   padding: 0 2rem;
   color: #9095a7;
   font-size: 1.63rem;
   margin-bottom: 4rem;
+}
+@media (min-width: 1000px) {
+  .manage__cards p {
+    font-size: 1.5rem;
+    padding: 0 2rem;
+  }
 }
 .manage__card {
   background-color: #ffefeb;
@@ -277,16 +307,32 @@ h6 {
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
 }
+@media (min-width: 1000px) {
+  .manage__card {
+    background-color: #fff;
+  }
+}
 .manage__card-flex {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3rem;
 }
+@media (min-width: 1000px) {
+  .manage__card-flex {
+    justify-content: flex-start;
+    gap: 0;
+  }
+}
 .manage__card-flex h3 {
   color: hsl(228deg, 39%, 23%);
   font-size: 1.6rem;
   margin-left: 6rem;
+}
+@media (min-width: 1000px) {
+  .manage__card-flex h3 {
+    margin-left: 12rem;
+  }
 }
 .manage__card-flex .cont {
   background-color: #f25f3a;

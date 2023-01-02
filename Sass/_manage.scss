@@ -3,18 +3,34 @@
 .manage {
   margin-top: 8rem;
   text-align: center;
+  @include for-desktop() {
+    padding: 0 9rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 15rem;
+  }
   &__heading {
     padding: 0 3.2rem;
+    @include for-desktop() {
+      text-align: left;
+    }
     h2 {
       color: $primary-color-dark-blue;
       font-size: 3rem;
       margin-bottom: 1.2rem;
+      @include for-desktop() {
+        font-size: 3rem;
+      }
     }
     p {
       color: $secondary-color-grey-blue;
       font-size: 1.5rem;
       margin-bottom: 6rem;
       line-height: 1.7;
+      @include for-desktop() {
+        font-size: 1.5rem;
+      }
     }
   }
   &__cards {
@@ -24,6 +40,10 @@
       color: $secondary-color-grey-blue;
       font-size: 1.63rem;
       margin-bottom: 4rem;
+      @include for-desktop() {
+        font-size: 1.5rem;
+        padding: 0 2rem;
+      }
     }
   }
   &__card {
@@ -34,16 +54,26 @@
     margin-left: 1rem;
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
+    @include for-desktop() {
+      background-color: #fff;
+    }
   }
   &__card-flex {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    @include for-desktop() {
+      justify-content: flex-start;
+      gap: 0;
+    }
     h3 {
       color: $primary-color-dark-blue;
       font-size: 1.6rem;
       margin-left: 6rem;
+      @include for-desktop() {
+        margin-left: 12rem;
+      }
     }
     .cont {
       background-color: $primary-color-bright-red;
