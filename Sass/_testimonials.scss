@@ -22,6 +22,8 @@
     background-color: $secondary-color-light-grey;
     text-align: center;
     padding: 5rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 8px;
     img {
       width: 8rem;
       margin: 0 auto;
@@ -56,8 +58,8 @@
     font-size: 1.5rem;
     transition: all 0.25s ease-in-out;
     border: 2px solid transparent;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
     &:hover {
       border: 2px solid $primary-color-bright-red;
       background-color: #fff;

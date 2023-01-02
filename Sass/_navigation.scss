@@ -1,16 +1,61 @@
 @import "variables";
-
+@import "mixin";
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 4rem;
   margin-bottom: 4rem;
+  @include for-desktop() {
+    margin-bottom: 5rem;
+    justify-content: flex-start;
+    gap: 5rem;
+  }
   .navigation__list {
     display: none;
+    @include for-desktop() {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      gap: 2.5rem;
+      padding: 0;
+    }
+    &-link {
+      @include for-desktop() {
+        text-decoration: none;
+        color: $primary-color-dark-blue;
+        font-size: 1.5rem;
+        transition: all 0.25s ease-in-out;
+      }
+      &:hover {
+        @include for-desktop() {
+          color: $secondary-color-grey-blue;
+        }
+      }
+    }
   }
   .navigation__button {
     display: none;
+    @include for-desktop() {
+      display: initial;
+      background-color: $primary-color-bright-red;
+      border: 0;
+      border-radius: 2rem;
+      padding: 1rem 1.5rem;
+      color: #fff;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      cursor: pointer;
+      font-size: 1.5rem;
+      transition: all 0.25s ease-in-out;
+      border: 2px solid transparent;
+    }
+    &:hover {
+      border: 2px solid $primary-color-bright-red;
+      background-color: #fff;
+      color: $primary-color-dark-blue;
+    }
   }
 
   .navigation__burger {
@@ -19,6 +64,9 @@
     background-color: $primary-color-dark-blue;
     cursor: pointer;
     position: relative;
+    @include for-desktop() {
+      display: none;
+    }
     &::before {
       content: "";
       height: 3px;

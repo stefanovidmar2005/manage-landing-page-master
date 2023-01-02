@@ -76,11 +76,61 @@ h6 {
   padding-top: 4rem;
   margin-bottom: 4rem;
 }
+@media (min-width: 1000px) {
+  .navigation {
+    margin-bottom: 5rem;
+    justify-content: flex-start;
+    gap: 5rem;
+  }
+}
 .navigation .navigation__list {
   display: none;
 }
+@media (min-width: 1000px) {
+  .navigation .navigation__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 2.5rem;
+    padding: 0;
+  }
+}
+@media (min-width: 1000px) {
+  .navigation .navigation__list-link {
+    text-decoration: none;
+    color: hsl(228deg, 39%, 23%);
+    font-size: 1.5rem;
+    transition: all 0.25s ease-in-out;
+  }
+}
+@media (min-width: 1000px) {
+  .navigation .navigation__list-link:hover {
+    color: #9095a7;
+  }
+}
 .navigation .navigation__button {
   display: none;
+}
+@media (min-width: 1000px) {
+  .navigation .navigation__button {
+    display: initial;
+    background-color: #f25f3a;
+    border: 0;
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all 0.25s ease-in-out;
+    border: 2px solid transparent;
+  }
+}
+.navigation .navigation__button:hover {
+  border: 2px solid #f25f3a;
+  background-color: #fff;
+  color: hsl(228deg, 39%, 23%);
 }
 .navigation .navigation__burger {
   height: 3px;
@@ -88,6 +138,11 @@ h6 {
   background-color: hsl(228deg, 39%, 23%);
   cursor: pointer;
   position: relative;
+}
+@media (min-width: 1000px) {
+  .navigation .navigation__burger {
+    display: none;
+  }
 }
 .navigation .navigation__burger::before {
   content: "";
@@ -109,6 +164,11 @@ h6 {
 .header {
   padding: 0 2.5rem;
 }
+@media (min-width: 1000px) {
+  .header {
+    padding: 0 9rem;
+  }
+}
 .header__images {
   position: relative;
 }
@@ -119,8 +179,15 @@ h6 {
   background-size: cover;
   height: 35rem;
 }
+@media (min-width: 1000px) {
+  .header__images-1 {
+    height: 75vh;
+    width: 100%;
+  }
+}
 .header__content {
   text-align: center;
+  padding: 0 2rem;
 }
 .header__content h1 {
   color: hsl(228deg, 39%, 23%);
@@ -128,12 +195,24 @@ h6 {
   line-height: 1.4;
   margin-bottom: 1.2rem;
 }
+@media (min-width: 1000px) {
+  .header__content h1 {
+    font-size: 4rem;
+    margin-top: 1rem;
+  }
+}
 .header__content p {
   color: #9095a7;
   font-size: 1.6rem;
   line-height: 1.7;
   font-weight: 400;
   margin-bottom: 2.5rem;
+}
+@media (min-width: 1000px) {
+  .header__content p {
+    font-size: 2.1rem;
+    padding: 0 4rem;
+  }
 }
 .header__content button {
   background-color: #f25f3a;
@@ -146,6 +225,11 @@ h6 {
   font-size: 1.5rem;
   transition: all 0.25s ease-in-out;
   border: 2px solid transparent;
+}
+@media (min-width: 1000px) {
+  .header__content button {
+    font-size: 1.7rem;
+  }
 }
 .header__content button:hover {
   border: 2px solid #f25f3a;
@@ -238,6 +322,8 @@ h6 {
   background-color: #fafafa;
   text-align: center;
   padding: 5rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 8px;
 }
 .testimonials__card img {
   width: 8rem;
@@ -271,8 +357,8 @@ h6 {
   font-size: 1.5rem;
   transition: all 0.25s ease-in-out;
   border: 2px solid transparent;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 .testimonials button:hover {
   border: 2px solid #f25f3a;
@@ -314,7 +400,7 @@ h6 {
 }
 
 .footer {
-  background-color: hsl(228deg, 39%, 23%);
+  background-color: #1d1e25;
   padding: 2rem 3rem;
 }
 .footer ::placeholder {
@@ -337,7 +423,12 @@ h6 {
   border-radius: 100vw;
   border: 0;
   font-size: 1.5rem;
-  outline: 0;
+  outline: 2px solid transparent;
+  transition: all 0.25s ease-in-out;
+}
+.footer__flex .footer__inputs-email:focus {
+  border-radius: 1rem;
+  outline: 2px solid #f25f3a;
 }
 .footer__flex .footer__inputs-btn {
   padding: 1rem 3rem;
@@ -371,6 +462,13 @@ h6 {
   color: #fafafa;
   text-decoration: none;
   font-size: 1.6rem;
+  transition: all 0.25s ease-in-out;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.3rem;
+}
+.footer__list-flex ul li a:hover {
+  color: #f25f3a;
+  border-bottom: 2px solid #f25f3a;
 }
 .footer .contact__links-icons {
   display: flex;
@@ -379,7 +477,7 @@ h6 {
   gap: 2rem;
   align-items: center;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .footer .contact__links-icons a {
   color: #fff;
@@ -397,7 +495,8 @@ h6 {
 .footer p {
   text-align: center;
   color: #9095a7;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

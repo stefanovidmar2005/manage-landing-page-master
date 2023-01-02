@@ -1,0 +1,10 @@
+@mixin for-desktop {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+@mixin for-lrg-desktop {
+  @media (min-width: 1300px) {
+    @content;
+  }
+}
