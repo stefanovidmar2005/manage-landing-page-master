@@ -6,6 +6,7 @@
   align-items: center;
   padding-top: 4rem;
   margin-bottom: 4rem;
+
   @include for-desktop() {
     margin-bottom: 5rem;
     justify-content: center;

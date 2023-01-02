@@ -396,6 +396,11 @@ h6 {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 8px;
 }
+@media (min-width: 1000px) {
+  .testimonials__card {
+    margin-top: 2rem;
+  }
+}
 .testimonials__card img {
   width: 8rem;
   margin: 0 auto;
@@ -512,12 +517,22 @@ h6 {
   flex-direction: column;
   gap: 2rem;
 }
+@media (min-width: 1000px) {
+  .footer__flex {
+    justify-content: center;
+  }
+}
 .footer__flex .footer__inputs {
   display: flex;
   gap: 1rem;
   align-items: center;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+@media (min-width: 1000px) {
+  .footer__flex .footer__inputs {
+    justify-content: center;
+  }
 }
 .footer__flex .footer__inputs-email {
   padding: 1rem 2rem;
@@ -552,6 +567,11 @@ h6 {
   display: flex;
   align-items: flex-start;
   gap: 5rem;
+}
+@media (min-width: 1000px) {
+  .footer__list-flex {
+    justify-content: center;
+  }
 }
 .footer__list-flex ul {
   list-style-type: none;

@@ -1,5 +1,5 @@
 @import "variables";
-
+@import "mixin";
 .footer {
   ::placeholder {
     color: $secondary-color-grey-blue;
@@ -10,12 +10,18 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    @include for-desktop() {
+      justify-content: center;
+    }
     .footer__inputs {
       display: flex;
       gap: 1rem;
       align-items: center;
       margin-top: 2.5rem;
       margin-bottom: 2.5rem;
+      @include for-desktop() {
+        justify-content: center;
+      }
       &-email {
         padding: 1rem 2rem;
         border-radius: 100vw;
@@ -51,6 +57,9 @@
     display: flex;
     align-items: flex-start;
     gap: 5rem;
+    @include for-desktop() {
+      justify-content: center;
+    }
 
     ul {
       list-style-type: none;

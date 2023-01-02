@@ -37,6 +37,9 @@
     padding: 5rem 2rem;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border-radius: 8px;
+    @include for-desktop() {
+      margin-top: 2rem;
+    }
     img {
       width: 8rem;
       margin: 0 auto;
