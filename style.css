@@ -450,11 +450,30 @@ h6 {
   text-align: center;
   padding: 5rem 3rem;
 }
+@media (min-width: 1000px) {
+  .simplify {
+    padding: 10rem 3rem;
+  }
+}
+@media (min-width: 1000px) {
+  .simplify__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+  }
+}
 .simplify__content h1 {
   font-size: 3.7rem;
   color: #fff;
   padding-top: 3rem;
   font-weight: 700;
+}
+@media (min-width: 1000px) {
+  .simplify__content h1 {
+    padding-top: 0;
+    font-size: 4rem;
+  }
 }
 .simplify__content button {
   background-color: #fff;
@@ -468,6 +487,12 @@ h6 {
   transition: all 0.25s ease-in-out;
   margin-top: 3rem;
   margin-bottom: 4rem;
+}
+@media (min-width: 1000px) {
+  .simplify__content button {
+    margin: 0;
+    font-size: 1.6rem;
+  }
 }
 .simplify__content button:hover {
   background-color: hsl(228deg, 39%, 23%);

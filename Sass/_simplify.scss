@@ -1,5 +1,5 @@
 @import "variables";
-
+@import "mixin";
 .simplify {
   background-color: $primary-color-bright-red;
   display: flex;
@@ -7,13 +7,26 @@
   align-items: center;
   text-align: center;
   padding: 5rem 3rem;
+  @include for-desktop() {
+    padding: 10rem 3rem;
+  }
   &__content {
+    @include for-desktop() {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10rem;
+    }
     h1 {
       font-size: 3.7rem;
       color: #fff;
       //   margin-bottom: 2rem;
       padding-top: 3rem;
       font-weight: $font-weight-bold;
+      @include for-desktop() {
+        padding-top: 0;
+        font-size: 4rem;
+      }
     }
     button {
       background-color: #fff;
@@ -28,6 +41,10 @@
       transition: all 0.25s ease-in-out;
       margin-top: 3rem;
       margin-bottom: 4rem;
+      @include for-desktop() {
+        margin: 0;
+        font-size: 1.6rem;
+      }
     }
     button:hover {
       background-color: $primary-color-dark-blue;
