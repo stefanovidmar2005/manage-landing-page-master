@@ -6,8 +6,26 @@
     padding: 0 9rem;
   }
 
+  @include for-lrg-desktop() {
+    padding: 0 10rem;
+  }
+
+  &__flex {
+    @include for-lrg-desktop() {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      text-align: left;
+      justify-content: space-between;
+      gap: 10rem;
+    }
+  }
+
   &__images {
     position: relative;
+    @include for-lrg-desktop() {
+      position: initial;
+    }
     &-1 {
       background-image: url("images/illustration-intro.svg");
       background-repeat: no-repeat;
@@ -18,6 +36,10 @@
         height: 75vh;
         width: 100%;
       }
+      @include for-lrg-desktop() {
+        height: 80vh;
+        width: 100vh;
+      }
     }
   }
   &__content {
@@ -27,6 +49,12 @@
       padding: 0 8rem;
       margin-top: 3rem;
     }
+    @include for-lrg-desktop() {
+      text-align: left;
+      flex: 1;
+      padding: 0;
+      margin-top: 0;
+    }
     h1 {
       color: $primary-color-dark-blue;
       font-size: 3.5rem;
@@ -35,6 +63,12 @@
       @include for-desktop() {
         font-size: 4rem;
         margin-top: 1rem;
+      }
+      @include for-lrg-desktop() {
+        font-size: 5rem;
+        margin-top: 0;
+        line-height: 1.2;
+        margin-bottom: 3rem;
       }
     }
     p {
@@ -46,6 +80,12 @@
       @include for-desktop() {
         font-size: 2.1rem;
         padding: 0 4rem;
+      }
+      @include for-lrg-desktop() {
+        padding: 0;
+        padding-right: 15rem;
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
       }
     }
     button {
@@ -62,6 +102,10 @@
       border: 2px solid transparent;
       @include for-desktop() {
         font-size: 1.7rem;
+      }
+      @include for-lrg-desktop() {
+        font-size: 1.6rem;
+        padding: 1.25rem 4rem;
       }
       &:hover {
         border: 2px solid $primary-color-bright-red;

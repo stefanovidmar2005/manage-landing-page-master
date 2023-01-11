@@ -83,6 +83,13 @@ h6 {
     gap: 5rem;
   }
 }
+@media (min-width: 1300px) {
+  .navigation {
+    justify-content: space-between;
+    padding-top: 5rem;
+    margin-bottom: 10rem;
+  }
+}
 .navigation .navigation__list {
   display: none;
 }
@@ -94,6 +101,11 @@ h6 {
     list-style: none;
     gap: 2.5rem;
     padding: 0;
+  }
+}
+@media (min-width: 1300px) {
+  .navigation .navigation__list {
+    gap: 3.5rem;
   }
 }
 @media (min-width: 1000px) {
@@ -125,6 +137,11 @@ h6 {
     font-size: 1.5rem;
     transition: all 0.25s ease-in-out;
     border: 2px solid transparent;
+  }
+}
+@media (min-width: 1300px) {
+  .navigation .navigation__button {
+    padding: 1rem 2.3rem;
   }
 }
 .navigation .navigation__button:hover {
@@ -169,8 +186,28 @@ h6 {
     padding: 0 9rem;
   }
 }
+@media (min-width: 1300px) {
+  .header {
+    padding: 0 10rem;
+  }
+}
+@media (min-width: 1300px) {
+  .header__flex {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    gap: 10rem;
+  }
+}
 .header__images {
   position: relative;
+}
+@media (min-width: 1300px) {
+  .header__images {
+    position: initial;
+  }
 }
 .header__images-1 {
   background-image: url("images/illustration-intro.svg");
@@ -185,6 +222,12 @@ h6 {
     width: 100%;
   }
 }
+@media (min-width: 1300px) {
+  .header__images-1 {
+    height: 80vh;
+    width: 100vh;
+  }
+}
 .header__content {
   text-align: center;
   padding: 0 2rem;
@@ -193,6 +236,14 @@ h6 {
   .header__content {
     padding: 0 8rem;
     margin-top: 3rem;
+  }
+}
+@media (min-width: 1300px) {
+  .header__content {
+    text-align: left;
+    flex: 1;
+    padding: 0;
+    margin-top: 0;
   }
 }
 .header__content h1 {
@@ -207,6 +258,14 @@ h6 {
     margin-top: 1rem;
   }
 }
+@media (min-width: 1300px) {
+  .header__content h1 {
+    font-size: 5rem;
+    margin-top: 0;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+  }
+}
 .header__content p {
   color: #9095a7;
   font-size: 1.6rem;
@@ -218,6 +277,14 @@ h6 {
   .header__content p {
     font-size: 2.1rem;
     padding: 0 4rem;
+  }
+}
+@media (min-width: 1300px) {
+  .header__content p {
+    padding: 0;
+    padding-right: 15rem;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
   }
 }
 .header__content button {
@@ -235,6 +302,12 @@ h6 {
 @media (min-width: 1000px) {
   .header__content button {
     font-size: 1.7rem;
+  }
+}
+@media (min-width: 1300px) {
+  .header__content button {
+    font-size: 1.6rem;
+    padding: 1.25rem 4rem;
   }
 }
 .header__content button:hover {
