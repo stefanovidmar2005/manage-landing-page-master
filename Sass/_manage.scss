@@ -10,10 +10,18 @@
     gap: 1rem;
     margin-top: 15rem;
   }
+  @include for-lrg-desktop() {
+    padding: 0 10rem;
+    justify-content: space-between;
+    gap: 10rem;
+  }
   &__heading {
     padding: 0 3.2rem;
     @include for-desktop() {
       text-align: left;
+    }
+    @include for-desktop() {
+      padding: 0;
     }
     h2 {
       color: $primary-color-dark-blue;
@@ -21,6 +29,10 @@
       margin-bottom: 1.2rem;
       @include for-desktop() {
         font-size: 3rem;
+      }
+      @include for-lrg-desktop() {
+        font-size: 4rem;
+        margin-bottom: 2rem;
       }
     }
     p {
@@ -30,6 +42,10 @@
       line-height: 1.7;
       @include for-desktop() {
         font-size: 1.5rem;
+      }
+      @include for-lrg-desktop() {
+        font-size: 1.6rem;
+        padding-right: 20rem;
       }
     }
   }
@@ -43,6 +59,9 @@
       @include for-desktop() {
         font-size: 1.5rem;
         padding: 0 2rem;
+      }
+      @include for-lrg-desktop() {
+        padding-right: 10rem;
       }
     }
   }
@@ -74,6 +93,9 @@
       @include for-desktop() {
         margin-left: 12rem;
       }
+      @include for-lrg-desktop() {
+        margin-left: 10rem;
+      }
     }
     .cont {
       background-color: $primary-color-bright-red;
@@ -85,6 +107,9 @@
       height: 100%;
       width: 21%;
       font-size: 1.6rem;
+      @include for-lrg-desktop() {
+        width: 14%;
+      }
       span {
         position: absolute;
         top: 50%;
