@@ -333,7 +333,6 @@ h6 {
   .manage {
     padding: 0 10rem;
     justify-content: space-between;
-    gap: 10rem;
   }
 }
 .manage__heading {
